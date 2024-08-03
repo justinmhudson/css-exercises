@@ -1,5 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* MOVED FROM div */
+  text-align: center;
 }
 
 img {
@@ -10,7 +12,36 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
 }
+
+/* By doing text-align in body, don't need for title
+REMOVED:
+.title,
+*/
+.plants {
+  display: flex;
+  justify-content: center;
+}
+
+.plants {
+  gap: 52px;
+}
+
+.plant-item {
+  /* REMOVED: 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  ADDED:
+  */
+  max-width: 200px;
+}
+
+/* div {
+  MOVED TO body  text-align: center;
+} */
 
 /* do not edit this footer */
 .footer {
